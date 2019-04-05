@@ -10,11 +10,9 @@ for i in range(1, len(lp)):
     line = lp[i]
     dat = line.split(',')
     if len(dat) > 100:
-            if dat[4] != '':
+            if dat[4] != '' && dat[5] != '' && dat[6] != '':
                     satisfaction.append(int(dat[4]))
-            if dat[5] != '':
                     recommend.append(int(dat[5]))
-            if dat[6] != '':
                     likereturn.append(int(dat[6]))
 
 print("##### Satisfaction #####")
